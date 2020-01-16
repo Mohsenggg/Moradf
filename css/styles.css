@@ -1,0 +1,779 @@
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+   scroll-behavior: smooth;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+   font-family: "times", sans-serif, cursive;
+   font-size: 27px;
+   color: #066192;
+   text-align: center;
+}
+img, embed, object, video {
+  max-width: 100%;
+}
+
+
+header, main, aside, footer {
+  box-sizing: border-box;
+}
+
+
+ .exten_img {
+     height: 60px;
+     width: 30%;
+     margin: 20px 10px 0px;
+     float: left;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .slogan_img {
+    margin: 5px 2px 15px;
+    padding: 5px;
+    height: 90px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+ .topnav {
+   background-color: #066092;
+   overflow: hidden;
+   width: 100%;
+   height: 35px;
+ }
+
+
+ .topnav  a {
+
+  float: center;
+  color: #ddd;
+  transition: 0.8s;  /* display: block; */
+  text-align: right;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.topnav a.active {
+    background-color: #ddb000;
+    color: white;
+}
+
+ .topnav a:hover {
+  background-color: #ddd;
+  color: #ddb000;
+  transition: 0.8s;
+}
+
+.hiddenbar {
+  display: none;
+}
+
+#sidebar a:hover {
+ background-color: #ddd;
+ color: #ddb000;
+ transition: 0.8s;
+}
+
+#sidebar-btn:hover{
+  background-color: #066092;
+  transition: 0.8s;
+}
+
+
+#sidebar {
+  padding-top: 1px;
+  width: 200px;
+  height: 330px;
+  display: block;
+  position: absolute;
+  float: left;
+  font-size: 20px;
+  left: -200px;
+  transition: left 1s linear;
+}
+
+#sidebar.visible{
+left: 0px;
+transition: left 1s linear;
+}
+
+
+#sidebar ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#sidebar ul li {
+  list-style: none;
+  height: 38px;
+}
+
+#sidebar ul li a{
+  background: #066092;
+  color: white;
+  border-bottom: 1px solid white;
+  display: block;
+  width: 120px;
+  padding: 7.2px;
+  text-decoration: none;
+}
+
+.btn_img {
+ height: 28px;
+ width: 30px;
+ padding: 5px;
+ float: left;
+ background-color: #ddb000;
+}
+
+/* ---------------Intro-------------------- */
+
+#Intro {
+  height: 750px;
+  width:100%;
+  margin: auto;
+  background-image: url("img/r-l.png");
+}
+
+ .intro_img {
+   height: 120px;
+   width: 70%;
+   padding: 10px;
+   margin: 2.5em 0.5em 1.5em;
+   float: center;
+   border: 1px inset rgb(136, 212, 250);
+ }
+
+ .intro_text {
+      font: 20px Times, sans-serif;
+       /* position: relative; */
+       width: 95%;
+       word-spacing: 1px;
+       letter-spacing: 0.3px;
+       padding: px;
+       margin: auto;
+       text-align: center;
+       line-height: 28px;
+ }
+ /* ------------Vision-------------------- */
+
+ #vission {
+   display: block;
+   height: 430px;
+   width:100%;
+   margin: auto;
+   /* border-top: 1px solid rgb(242, 247, 249); */
+ }
+
+ .vission_img {
+       height: 250px;
+       width: 100%;
+       margin: 2.5em 0em 3em;
+ }
+
+
+ b {
+   color: #d1ab0d;
+ }
+
+
+ #skills, #springs, #contact {
+   font: Times, sans-serif;
+   color: #ddb000;
+ }
+
+ h1 {
+    font: 30px Times , sans-serif;
+    font-weight: bold;
+     letter-spacing: 3px;
+     word-spacing: 3px;
+     margin: 2.5em 0.5em 1em;
+   }
+
+ /* ------------lens-------------------- */
+
+ #lense {
+   height: 1600px;
+   width:100%;
+   margin: auto;
+   border-top: 1px solid rgb(242, 247, 249);
+   background-image: linear-gradient(45deg, transparent, #d1ab0d73);
+   /* 45deg */
+ }
+
+ .lens_img {
+   height: 200px;
+   width: 85%;
+   background: white;
+   padding: 10px;
+   margin: 1em 0em 1em;
+   border: 1px solid #ddb000;
+}
+ .lens_text {
+   font: 18px Times, sans-serif;
+   width: 90%;
+   margin: auto;
+   letter-spacing: 0.4px;
+   text-align: left;
+   color: #00476d;
+   line-height: 20px;
+ }
+
+
+ /* ------------skills-------------------- */
+
+ #skills {
+   height: 1550px;
+   width:100%;
+   margin: auto;
+   border-top: 1px solid rgb(242, 247, 249);
+   background-image: linear-gradient(45deg, transparent, #06619233);
+   /* 45deg */
+ }
+
+.skills_img {
+   height: 200px;
+   width: 85%;
+   background: white;
+   padding: 10px;
+   margin: 1em 0em 1em;
+   border: 1px solid #066192;
+}
+
+
+
+
+.skills_text {
+   font: 18px Times, sans-serif;
+   width: 90%;
+   margin: auto;
+   letter-spacing: 0.4px;
+   text-align: left;
+   line-height: 20px;
+   color: #a38200;
+ }
+
+ /* ------------students-------------------- */
+
+ #students{
+   height:800px;
+   width: 100%;
+   margin: auto;
+   /* border-bottom: 2px solid #066192; */
+ }
+
+ .st-text {
+   font: 18px Times, sans-serif;
+   width: 90%;
+   margin: auto;
+   letter-spacing: 0.4px;
+   line-height: 20px;
+ }
+
+ .head-line {
+   font-size: 20px;
+   text-align: center;
+ }
+
+
+ .require {
+   text-align: left;
+ }
+
+ #students ol {
+   text-align: left;
+ }
+
+ /* ------------students-------------------- */
+
+
+ .quote {
+   height: 55px;
+   width:100%;
+   margin: auto;
+   border-top: 1px solid white;
+ }
+
+ .quote_img {
+   height: 55px;
+   width: 100%;
+   background: white;
+ }
+
+ /* ------------spring-------------------- */
+
+ #springs {
+  height:430px;
+  width: 100%;
+  margin: auto;
+  transition-duration: 3s;
+  /* border-top: 2px solid #ddb000; */
+}
+
+.spring_img{
+
+  height: 200px;
+  width: 96%;
+  padding: 1.5px;
+  margin: 1em 0em 1em;
+  border: 2px solid #ddb000;
+}
+
+.find {
+  height: 20px;
+}
+
+.find a {
+  font: 15px Times, sans-serif;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+  color: #d1ab0d;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.find span {
+  color: #066192;
+  transition: 0.5s;
+}
+
+.find a:hover {
+  color: #066192;
+  transition: 0.5s;
+}
+
+/* ------------Team-------------------- */
+
+#team {
+  height: 700px;
+  width: 100%;
+  margin: auto;
+  /* border-top: 2px solid #066192; */
+}
+
+.team_img{
+  height: 250px;
+      width: 98%;
+      float: center;
+      margin: 20px 2px 50px 2px;
+}
+
+.team-text {
+  font-size: 18px;
+      width: 95%;
+      margin: auto;
+      line-height: 30px;
+      letter-spacing: 0.5px;
+}
+
+.team-text a {
+  color: #d1ab0d;
+}
+
+.team-text i {
+  font-size: 25px;
+}
+
+
+#contact {
+  height: 300px;
+  width: 100%;
+  bottom: 0px;
+  background-image: linear-gradient(#066192, white);
+}
+
+.icon {
+      height: 70px;
+      width: 20%;
+      padding: 10px;
+      margin: auto;
+      transition: 5s;
+}
+
+
+h2 {
+  width: 90%;
+  font-style: italic;
+  font: 30px Times , sans-serif;
+  font-weight: bold;
+  color: white;
+  float: left;
+  left: 1em;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  margin: 25px 12px;
+  }
+
+
+footer {
+  font-size: 12px;
+}
+
+
+
+		@media screen and (min-width: 275px) {
+			.lens_text, .skills_text, .st-text, .intro_text {
+				letter-spacing: 0.8px;
+		 }
+
+		}
+
+
+				@media screen and (min-width: 300px) {
+					.lens_text, .skills_text, .st-text, .intro_text {
+						line-height: 23px;
+				 }
+				}
+
+		@media screen and (min-width: 350px) {
+			.lens_text, .skills_text, .st-text {
+				font-size: 21px;
+				line-height: 25px;
+			}
+
+			.head-line {
+		    font-size: 23px;
+			}
+
+			.intro_text {
+				font-size: 23px;
+	      line-height: 30px;
+	      letter-spacing: 1px;
+
+			}
+
+			.quote, .quote_img {
+				height: 100px;
+			}
+		}
+
+		@media screen and (min-width: 430px) {
+			.intro_img {
+				height: 280px;
+				width: 80%;
+				margin: 4em 0.5em 2em;
+		}
+
+		#Intro {
+    height: 900px;
+	}
+	.lens_img, .skills_img, .spring_img {
+		height: 300px;
+		margin: 2em 0em 2em;
+	}
+
+	#students {
+		height:720px;
+	}
+
+	.head-line {
+		margin: 3em 0em 0em;
+  }
+
+
+	#springs {
+   height:600px;
+ }
+
+ .find a {
+   font: 20px Times, sans-serif;
+}
+	.icon {
+	      height: 75px;
+	      width: 22%;
+}
+.quote, .quote_img {
+	height: 150px;
+}
+
+}
+
+@media screen and (min-width: 550px) {
+
+	.exten_img {
+		height: 100px;
+		width: 25%;
+    margin: 2em 0em 2em 0.5em;
+		}
+
+		.slogan_img {
+		margin: 1.7em 0em 2em;
+    padding: 5px;
+    height: 120px;
+    width: 65%;
+    float: right;
+		}
+		#lense,  #skills {
+			height: 1700px;
+		}
+
+	.lens_text, .skills_text, .st-text {
+		font-size: 23px;
+    line-height: 30px;
+
+	}
+
+	.intro_text {
+		font-size: 30px;
+    line-height: 32px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+	}
+
+}
+
+@media screen and (min-width: 600px) {
+
+.hiddenbar {
+	display: inline;
+}
+
+.topnav  a {
+	padding: 14px 10px;
+	font-size: 18px;
+	}
+
+
+	.br {
+		display: none;
+	}
+
+	.intro_text {
+    line-height: 45px;
+	}
+
+	.team_img{
+		height: 400px;
+	}
+		.icon {
+		height: 120px;
+		width: 15%;
+}
+
+.quote, .quote_img {
+    height: 280px;
+}
+
+footer {
+  font-size: 20px;
+}
+h1{
+	font: 40px Times , sans-serif;
+    letter-spacing: 10px;
+		font-weight: bold;
+
+}
+h2{
+	font-size: 40px;
+	letter-spacing: 10px;
+}
+
+}
+
+@media screen and (min-width: 830px) {
+
+	.exten_img {
+		height: 100px;
+		width: 20%;
+		margin: 2.5em 0em 2em 1.5em;
+	}
+	.slogan_img {
+		height: 130px;
+	  width: 65%;
+	}
+
+	.topnav  a {
+		padding: 14px 19px;
+		font-size: 20px;
+	}
+
+	.intro_img, .lens_img, .skills_img, .spring_img, .vission_img {
+		width: 70%;
+	}
+
+.intro_text{
+	width: 75%;
+
+}
+
+	.lens_text, .skills_text, .st-text{
+		width: 75%;
+		word-spacing: 3px;
+		letter-spacing: 1.5px;
+	}
+
+	#vission {
+		height: 500px;
+	}
+
+	.vission_img {
+		height: 350px;
+	}
+
+	#team {
+	  height: 960px;
+	}
+
+	.team_img{
+		width: 80%;
+		height: 550px;
+	}
+
+	.icon {
+    height: 120px;
+    width: 15%;
+}
+ .team-text{
+	 font-size: 25px;
+ }
+ .team-text i {
+   font-size: 50px;
+ }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .lens_img, .skills_img, .spring_img, .vission_img {
+			height: 400px;
+	}
+
+	.lens_img, .skills_img, .spring_img, .vission_img {
+		width: 60%;
+	}
+
+	.exten_img {
+		height: 90px;
+		width: 15%;
+		margin: 2.5em 0em 2em 3em;
+		float: left;
+	}
+	.slogan_img {
+		height: 140px;
+		width: 50%;
+		margin: 1.7em 2em 2em;
+		float: right;
+	}
+
+	#Intro {
+		height: 1000px;
+	}
+
+	.intro_img {
+    height: 250px;
+    width: 50%;
+    padding: 3em;
+    margin: 5em 1em 2.5em;
+	}
+
+
+	h1{
+		font: 60px Times , sans-serif;
+	    letter-spacing: 15px;
+			word-spacing: 20px;
+			font-weight: bold;
+
+	}
+	h2{
+		font-size: 60px;
+		letter-spacing: 15px;
+		word-spacing: 20px;
+
+	}
+
+	.topnav {
+    height: 40px;
+  }
+
+	.topnav  a {
+		padding: 14px 30px;
+	}
+	#sidebar, .btn_img {
+		display: none;
+	}
+
+	.lens_text, .skills_text{
+		 line-height: 30px;
+		 word-spacing: 3px;
+		 letter-spacing: 1.5px;
+		}
+
+
+	.st-text {
+	  word-spacing: 3px;
+	  letter-spacing: 1.5px;
+	  text-align: center;
+	  line-height: 30px;
+	}
+
+
+	#vission {
+	height: 550px;
+}
+
+
+
+#springs {
+	height: 800px;
+}
+.find a {
+  font: 25px Times, sans-serif;
+
+}
+footer{
+	font-size: 25px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+	.exten_img {
+		height: 100px;
+		width: 12%;
+		margin: 2.5em 0em 2em 3.5em;
+		float: left;
+	}
+	.slogan_img {
+		height: 150px;
+		width: 50%;
+		float: right;
+		margin: 1.7em 3em 2.5em;
+
+	}
+
+	.topnav  a {
+		padding: 14px 40px;
+	}
+
+	#lense {
+		height: 1800px;
+	}
+
+	.lens_text, .skills_text{
+		width: 65%;
+		 line-height: 35px;
+
+		}
+		.lens_img, .skills_img, .spring_img, .vission_img {
+			width: 55%;
+		}
+
+		.st-text {
+		  width: 60%;
+		}
+
+		.icon {
+		      height: 120px;
+		      width: 15%;
+		      padding: 10px 20px;
+				}
+
+}
